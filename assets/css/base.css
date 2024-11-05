@@ -1,0 +1,22 @@
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0; 
+}
+html{
+    /* font-size: 62.5%; */
+    background-color: var(--third-color);
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --second-color: #75edd1;
+    --first-color:  #0146c7;
+    --third-color: #f0f0f0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 600px;
+}
