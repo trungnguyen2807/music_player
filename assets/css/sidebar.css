@@ -34,7 +34,7 @@
 .library_text{
     color:#ABAFB2;
     text-align: left;
-    font-size: 15px;
+    font-size: 1.5em;
     font-weight: 600;
     margin: 10px auto 10px 15px;
 }
@@ -44,7 +44,7 @@
     list-style: none;
 }
 .library_item_text{
-    font-size: 13.5px;
+    font-size: 1.35em;
     font-weight: 550;
     font-style: normal;
     text-decoration-thickness: 30px;
@@ -60,7 +60,7 @@
     color:#ABAFB2;
     width: 90%;
     text-align: left;
-    font-size: 15px;
+    font-size: 1.5em;
     font-weight: 600;
     margin: 10px auto 10px 15px;
     display: flex;
@@ -73,7 +73,7 @@
 }
 .playlist_item_text{
     color: #656C72;
-    font-size: 13.5px;
+    font-size: 1.35em;
     font-weight: 550;
     font-style: normal;
     text-decoration-thickness: 30px;
@@ -84,7 +84,7 @@
 .collection_text{
     color:#ABAFB2;
     text-align: left;
-    font-size: 15px;
+    font-size: 1.5em;
     font-weight: 600;
     margin: 10px auto 10px 15px;
 }
@@ -94,7 +94,7 @@
 }
 .collection_item_text{
     color: #656C72;
-    font-size: 13.5px;
+    font-size: 1.35em;
     font-weight: 550;
     font-style: normal;
     text-decoration-thickness: 30px;
