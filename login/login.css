@@ -8,6 +8,7 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
 }
+
 .login-container {
     width: 100%;
     max-width: 400px;
@@ -16,29 +17,35 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
 .login-container h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
+
 .form-group {
     margin-bottom: 15px;
 }
+
 .form-group label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 .form-group input {
-    width: 100%;
+    width: 94%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
 }
+
 .form-group input:focus {
     border-color: #007bff;
 }
+
 .form-group button {
     width: 100%;
     padding: 10px;
@@ -49,9 +56,11 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+
 .form-group button:hover {
     background-color: #0056b3;
 }
+
 .error-message {
     color: red;
     font-size: 14px;
