@@ -1,5 +1,5 @@
 .search{
-    background-color: #FAFAFA;
+    background-color: var(--base-color);
     height: 9rem;
     display: flex;
     flex-direction: row;
@@ -16,7 +16,7 @@
 .search_icons{
     width: 4rem;
     height: 4rem;
-    border: 1px solid #F3F3F3;
+    border: 1px solid var(--border-color);
     margin: auto 0;
 }
 .search_icons_left{
@@ -30,31 +30,96 @@
     height: 4rem;
     margin: auto 0;
     padding: 1.5rem;
-    border-bottom: 1px solid #F3F3F3;
-    border-top: 1px solid #F3F3F3;
-    border-left: 1px solid #F3F3F3;
+    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
     border-right: none;
     font-size: 1.6em;
+    background-color: var(--second-base-color);
 }
 .search_icons_button{
     width: 4rem;
     height: 4rem;
     margin: auto 0;
     box-sizing: border-box;
-    border-top: 1px solid #F3F3F3;
-    border-bottom: 1px solid #F3F3F3;
-    border-right: 1px solid #F3F3F3;
-    background-color: #fff;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
-.search_notification, .search_hexagon{
+.search_darkmode{
+    width: 9rem;
+    height: 9rem;
+    margin: auto 0;
+    border: 1px solid var(--border-color);
+    color: var(--content-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: var(--base-color);
+    transition: background-color 0.3s ease;
+}
+.search_darkmode:hover {
+    background-color: var(--second-base-color);     /* Thêm hiệu ứng cho hover button */
+}
+.search_notification, .search_setting{
     display: block;
     width: 9rem;
     height: 9rem;
-    border: 1px solid #F3F3F3;
+    border: 1px solid var(--border-color);
     margin: auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.search_setting{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--base-color);
+    transition: background-color 0.3s ease; /* Thêm transition để hover mượt */
+}
+.search_setting:hover {
+    background-color: var(--second-base-color);    
+}
+/* Animation mở rộng kích thước */
+@keyframes expand {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.search_setting-expand{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 20rem;
+    height: 30.3rem;
+    border-radius: 1rem;
+    background-color: grey;
+    list-style-type: none;
+    /* Thêm hiệu ứng chuyển đổi */
+    opacity: 0; /* Để làm hiệu ứng fade-in */
+    transform: translateY(-10px); /* Di chuyển nhẹ lên trên */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Thời gian chuyển đổi */
+}
+
+.search_setting-expand.show {
+    display: block;
+    animation: expand 0.3s ease forwards;
+}
+
+.search_setting-expand-items{
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
 }
 .search_notification .icons, .search_hexagon .icons{
     width: 2.5rem;

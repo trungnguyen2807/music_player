@@ -1,5 +1,5 @@
 *{
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0;
     padding: 0; 
 }
@@ -9,14 +9,29 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-:root{
-    --second-color: #75edd1;
-    --first-color:  #0146c7;
-    --third-color: #f0f0f0;
+:root {
+    /* Light color */
+    --header-text: #000000;
+    --content-text: #4A4A6A;
+    --border-color: #A3B1FF;
+    --base-color: #F5F5FA;
+    --second-base-color: #bbbbd7;
+    --button-color: #FF6F61;
+    --button-hover-color: #FF8578;
+}
+:root.dark-mode {
+    /* Dark color */
+    --header-text: #FFFFFF;
+    --content-text: #B0B0C3;
+    --border-color: #6A86FF;
+    --base-color: #1E1E2F;
+    --second-base-color: #545481;
+    --button-color: #FF6F61;
+    --button-hover-color: #FF8578;
 }
 .container{
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-width: 60rem;
+    min-width: 100rem;
 }

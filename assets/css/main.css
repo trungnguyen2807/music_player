@@ -1,7 +1,10 @@
 .section{
-    background-color: #FEFEFE;/*  #FBFBFB; */
-    width: calc(100% - 30rem);
-    height: 100rem;
+    background-color: var(--base-color);
+    /* width: calc(100% - 30rem); */
+    width: 100%;
+    min-width: 100rem;
+    /* height: 100rem; */
+    height: 100vh;
 }
 .main{
     width: 100%;
@@ -10,7 +13,7 @@
 }
 .main_text{
     font-size: 2.4em;
-    color:#1D2830;
+    color:var(--header-text);
 }
 .rcm_bar{
     display: flex;
@@ -20,7 +23,7 @@
 .rcm_bar_icons{
     height: 3rem;
     width: 3rem;
-    border: 1px solid #F3F3F3;
+    border: 1px solid var(--border-color);
     cursor: pointer;
 }
 .rcm_albums{
@@ -65,12 +68,12 @@
     justify-content: center;
 }
 .rcl_song_text{
-    color:#697076;
+    color:var(--content-text);
     font-size: 1.2rem;
 }
 .rcl_artist_text{
     font-size: 1em;
-    color: #8A8F93;
+    color: var(--content-text);
     padding-top: 0.4rem;
 }
 .top_list{
@@ -88,18 +91,18 @@
     padding-left: 0.5rem;
 }
 .top_list_header{
-    background-color: #FBFBFD;
+    background-color: var(--base-color);
     height: 4rem;
-    color: #C5C6CA;
+    color: var(--header-text);
 }
 .top_list_items{
     height: 4rem;
 }
 .top_list_items td{
     padding-left: 0.5rem;
-    color: #1c2125;
+    color: var(--content-text);
     font-size: 1.4em;
 }
 .top_list tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--second-base-color);
 }
