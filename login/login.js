@@ -9,6 +9,8 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
     const validPassword = "admin";
 
     if (username === validUsername && password === validPassword) {
+        // Lưu trạng thái đăng nhập vào localStorage
+        localStorage.setItem('isLoggedIn', 'true');
         window.location.href = "../main/index.html";
     } else {
         const errorMessage = document.getElementById('error-message');

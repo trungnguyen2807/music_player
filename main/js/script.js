@@ -1,3 +1,10 @@
+// Kiểm tra trạng thái đăng nhập
+const isLoggedIn = localStorage.getItem('isLoggedIn');
+if (isLoggedIn !== 'true') {
+    // Chưa đăng nhập, chuyển về trang login
+    window.location.href = "../login/login.html";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const searchSetting = document.querySelector(".search_setting");
     const searchExpand = document.querySelector(".search_setting-expand");
