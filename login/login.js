@@ -17,3 +17,16 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
         errorMessage.style.display = "block";
     }
 });
+
+const backgrounds = [
+    'img/bg1.jpg',
+    'img/bg2.jpg',
+    'img/bg3.jpg',
+    'img/bg4.jpg'
+];
+
+// Chọn một ảnh ngẫu nhiên từ danh sách
+const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+
+// Áp dụng ảnh nền ngẫu nhiên vào body
+document.body.style.backgroundImage = `url(${randomBackground})`;
